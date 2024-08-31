@@ -38,9 +38,9 @@ read
 ################################################################################
 
 # Flash secondary MCU - Mellow SB2040 Pro
-make clean KCONFIG_CONFIG=klipper-mellow-sb2004-pro.config
-make menuconfig KCONFIG_CONFIG=klipper-mellow-sb2004-pro.config
-make KCONFIG_CONFIG=klipper-mellow-sb2004-pro.config
+make clean KCONFIG_CONFIG=klipper-mellow-sb2040-pro.config
+make menuconfig KCONFIG_CONFIG=klipper-mellow-sb2040-pro.config
+make KCONFIG_CONFIG=klipper-mellow-sb2040-pro.config
 
 #echo -e -n "\e[0;33mMellow SB2040 Pro MCU firmware built, please check above for any errors. "
 #echo -e -n "\e[0;33mPress [Enter] to continue flashing, or [Ctrl+C] to abort"
