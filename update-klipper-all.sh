@@ -1,3 +1,4 @@
+#!/bin/bash
 cd ~/klipper
 
 echo -e -n "\e[0;31mStopping Klipper Service. "
