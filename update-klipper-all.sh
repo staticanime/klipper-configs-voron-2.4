@@ -39,18 +39,18 @@ read
 ################################################################################
 
 # Flash secondary MCU - Mellow SB2040 Pro
-make clean KCONFIG_CONFIG=klipper-mellow-sb2040-pro.config
-make menuconfig KCONFIG_CONFIG=klipper-mellow-sb2040-pro.config
-make -j 4 KCONFIG_CONFIG=klipper-mellow-sb2040-pro.config
+make clean KCONFIG_CONFIG=klipper-mellow-sb2040-pro-v3.config
+make menuconfig KCONFIG_CONFIG=klipper-mellow-sb2040-pro-v3.config
+make -j 4 KCONFIG_CONFIG=klipper-mellow-sb2040-pro-v3.config
 
-echo -e -n "\e[0;33mMellow SB2040 Pro MCU firmware built, please check above for any errors. "
+echo -e -n "\e[0;33mMellow SB2040 Pro V3 MCU firmware built, please check above for any errors. "
 echo -e -n "\e[0;33mPress [Enter] to continue flashing, or [Ctrl+C] to abort"
 echo -e -n '\e[0;0m'
 read
 
 python3 ~/katapult/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 606d62131587
 
-echo -e -n "\e[0;33mMellow SB2040 Pro MCU firmware flashed, please check above for any errors. "
+echo -e -n "\e[0;33mMellow SB2040 Pro V3 MCU firmware flashed, please check above for any errors. "
 echo -e -n "\e[0;33mPress [Enter] to continue flashing, or [Ctrl+C] to abort"
 echo -e -n '\e[0;0m'
 read
