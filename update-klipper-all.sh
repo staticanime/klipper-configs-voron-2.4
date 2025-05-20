@@ -48,7 +48,7 @@ echo -e -n "\e[0;33mPress [Enter] to continue flashing, or [Ctrl+C] to abort"
 echo -e -n '\e[0;0m'
 read
 
-python3 ~/katapult/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 43a836c9bbab
+python3 ~/katapult/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 606d62131587
 
 echo -e -n "\e[0;33mMellow SB2040 Pro MCU firmware flashed, please check above for any errors. "
 echo -e -n "\e[0;33mPress [Enter] to continue flashing, or [Ctrl+C] to abort"
